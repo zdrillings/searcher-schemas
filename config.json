@@ -1,0 +1,16 @@
+{
+    "type"                 : "postgres",
+
+    "username"             : "zdrillings",
+    "password"		   : "phiordie1878",
+    "host"                 : "localhost",
+    "db_name"              : "searcher",
+    "schema_name"          : "job_configuration",
+
+    "revision_db_name"     : "searcher",
+    "revision_schema_name" : "common",
+    "history_table_name"   : "schema_history",
+
+    "pre_commit_hook"      : "pre-commit-hook.sh",
+    "static_alter_dir"     : "DB_FILES"
+}
