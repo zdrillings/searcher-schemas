@@ -23,7 +23,8 @@ BEGIN;
 		id                    BIGSERIAL PRIMARY KEY,
 		created_on            TIMESTAMPTZ NOT NULL DEFAULT now(),
 		last_modified         TIMESTAMPTZ NOT NULL DEFAULT now(),
-		email                 VARCHAR(255) NOT NULL UNIQUE
+		email                 VARCHAR(255) NOT NULL UNIQUE,
+		validated	      boolean default false
 	);
 
 	CREATE INDEX ON users (created_on);
